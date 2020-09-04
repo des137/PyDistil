@@ -1,2 +1,2 @@
-# PyReducer
-Reduces the code to it's essense
+# PyDistil
+Distillates python codes to their essense.
