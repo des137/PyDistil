@@ -16,7 +16,8 @@ def distill_py_file(orig='orig.py', dest='dest.py'):
     with open(orig, 'r') as file:
         lines = file.readlines()    
     lines = [line for line in lines if line != '\n']
-    lines = [line for line in lines if not line.strip().startswith('#')]
+    lines = [line for line in lines if not line.strip()\
+             .startswith('#')]
     lines = [line for line in lines if len(line.split('"""')) != 3]
     output, count = [], 0
     for line in lines:
